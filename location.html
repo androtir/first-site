@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My very first page</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/popum.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav id="myTopnav">
+	      <img src="img/fort-icon.png" alt="Логотип сайта">
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="menu-element" title="На главную">Главная</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a>
+          </li>
+          <li>
+            <a href="services.html" class="menu-element" title="Услуги">Услуги</a>
+          </li>
+          <li>
+            <a href="blog.html" class="menu-element" title="Блог сайта">Блог</a>
+          </li>
+          <li>
+            <a href="location.html" class="menu-element" title="Контакты компании">Найти</a>
+          </li>
+        </ul>
+        <div id="hamburger" class="icon ">&#9776;</div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="location">
+	  <img class="top-image" src="img/01.jpg" alt="Обложка сайта">
+      <h1 class="main-title">Наши контакты</h1>
+      <div class="delimiter"></div>
+      <p class="main-title-description">Здесь вы найдете подробную информацию о нашей компании</p>
+      <div class="contact-container">
+        <div class="row">
+          <p>Город:</p>
+          <p>Тирасполь</p>
+        </div>
+          <div class="row">
+            <p>Улица:</p>
+            <p>Восстания 2А</p>
+          </div>
+          <div class="row">
+            <p>Телефон:</p>
+            <p>0 (533) 7-43-42</p>
+          </div>
+          <div class="row">
+            <p>Электронный ящик:</p>
+            <p>itidir@spsu.ru</p>
+          </div>
+    </section>
+    <section id="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e6cf8cd8161dfba8e87a6c5a9dafb8ff7fcd1bc7867c854007f57b04dc23896&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="main-title">Контактная форма</h2>
+        <div class="delimiter"></div>
+        <p class="main-title-description">С радостью ответим на любой вопрос</p>
+        <form id="contactform" method="post" action="contact.php" class="contact-form">
+          <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+          <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+          <input name="theme" type="text" class="col" placeholder="Тема сообщения">
+          <input name="phone" type="tel" class="col" placeholder="Номер телефона">
+          <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+          <input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+        </form>
+      </section>
+
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="menu-element" data-link="top" title="На главную">Главная</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a>
+          </li>
+          <li>
+            <a href="services.html" class="menu-element" title="Услуги">Услуги</a>
+          </li>
+          <li>
+            <a href="blog.html" class="menu-element" title="Блог сайта">Блог</a>
+          </li>
+          <li>
+            <a href="location.html" class="menu-element" title="Контакты компании">Найти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="brand">
+        <img src="img/fort-icon.png" alt="Логотип сайта">
+        <span>AWESOME</span>
+      </div>
+
+      <div class="social">
+        <a href="#" title="Facebook" target="_blank">
+          <img class="social-img" src="img/social/001-facebook.png" alt="Facebook">
+        </a>
+        <a href="#" title="Linkedin" target="_blank">
+          <img class="social-img" src="img/social/004-linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="#" title="Instagram" target="_blank">
+          <img class="social-img" src="img/social/005-instagram.png" alt="Instagram">
+        </a>
+        <a href="#" title="Twitter" target="_blank">
+          <img class="social-img" src="img/social/007-twitter.png" alt="Twitter">
+        </a>
+        <a href="#" title="Tumblr" target="_blank">
+          <img class="social-img" src="img/social/010-tumblr.png" alt="Tumblr">
+        </a>
+      </div>
+
+      <div class="copyright">© Very First Page 2020</div>
+    </footer>
+  </body>
+</html>
